@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form in HTML CSS</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Survey Form</header>
+
+      <form id="survey-form" class="form" action="#" >
+          <div class="input-box">
+            <label>First Name</label>
+            <input type="text" id="first-name" placeholder="YOUR NAME" required />
+          </div>
+
+          <div class="input-box">
+              <label>Last Name</label>
+              <input type="text" id="last-name" placeholder="LAST NAME OR FATHER NAME" required />
+          </div>
+
+          <div class="input-box">
+              <label>Email Address</label>
+              <input type="text" id="email" placeholder="mail@gmail.com" required />
+          </div>
+
+          <div class="column">
+              <div class="input-box">
+                <label>Mobile Number</label>
+                <input type="number" id="mobile" placeholder="9876543210" required />
+              </div>
+
+              <div class="input-box">
+                <label>Date Of Birth</label>
+                <input type="date" id="dob" placeholder="2000-12-31" required />
+              </div>
+          </div>
+
+          <div class="gender-box">
+            <h3>Gender</h3>
+              <div class="gender-option">
+                <div class="gender">
+                  <input type="checkbox" id="male" name="gender" checked />
+                    <label for="check-male">Male</label>
+                </div>
+                <div class="gender">
+                  <input type="checkbox" id="female" name="gender" />
+                  <label for="check-female">Female</label>
+                </div>
+                <div class="gender">
+                  <input type="checkbox" id="other" name="gender" />
+                  <label for="check-other">Prefer Not To Say</label>
+                </div>
+              </div>
+          </div>
+
+          <div class="input-box">
+            <label>Profession</label>
+            <input type="text" id="profession" placeholder="Associate Software Engineer" required />
+          </div>
+
+          <div id="country" class="label-country">
+            <label for="country">Country</label>
+            <div class="select-box">
+              <select>
+                  <option hidden>Country</option>
+                  <option>United States</option>
+                  <option>United Kingdom</option>
+                  <option>Canada</option>
+                  <option>India</option>
+                  <option>Israel</option>
+                  <option>Spain</option>
+                  <option>China</option>
+                  <option>Netherlands</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" id="submit-btn">Submit</button>
+            <button type="button" id="reset-btn">Reset</button>
+          </div>
+
+      </form>
+      <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" id="close-popup">&times;</span>
+            <h2>Customer Data</h2>
+            <div id="form-data"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    
+  </body>
+
+</html>
